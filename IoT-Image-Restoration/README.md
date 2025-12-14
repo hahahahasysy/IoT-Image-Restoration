@@ -42,7 +42,7 @@ cd IoT-Image-Restoration
 pip install -r requirements.txt
 
 # Run Denoising Demo
-python main.py --input data/original/test_image.png --mode denoise
+python main.py --input data/original/14_04_44.png --mode denoise
 ````
 
 -----
@@ -92,8 +92,8 @@ IoT-Image-Restoration/
 ### 📊 结果展示 (Results)
 
 
-| 运动模糊 (Motion Blur) | 维纳滤波复原 (Wiener Restoration) |
-| ![Blurred](data/results/14_04_44_denoise_Mean_Blur_3x3.png)|![Blurred](data/results/14_04_44_denoise_Mean_Blur_3x3.png)| 
+| 高斯加噪 (Gaussian) | 中值滤波复原 (Median Restorationo |
+| ![Blurred](data/results/14_04_44_denoise_Gaussian_3x3.png)|![Blurred](data/results/14_04_44_denoise_Median_3x3.png)| 
 
 
 ### 📝 数学原理 (Mathematical Background)
@@ -116,6 +116,7 @@ $$ \hat{F}(u,v) = \left[ \frac{H^*(u,v) S_{xx}(u,v)}{|H(u,v)|^2 S_{xx}(u,v) + S_
   * **学校**: 河海大学 (Hohai University)
   * **学院**: 信息科学工程学院 (College of information science and technology)
   * **联系方式**: suyuehh@163.com
+
 
 
 
